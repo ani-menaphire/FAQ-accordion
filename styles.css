@@ -8,19 +8,50 @@
 body {
     width: 100%;
     height: 100vh;
-    padding: 50px 30px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: hsl(275, 100%, 97%);
 }
 
+p {
+    font-size: 16px;
+    color: hsl(292, 16%, 49%);
+}
+
+h1 {
+    font-size: 32px;
+    color: hsl(292, 42%, 14%);
+}
+
+.mobile-bg, .desktop-bg {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -100;
+}
+
+.desktop-bg {
+    display: none;
+}
+
 article {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid hsl(275, 100%, 97%);
     padding: 15px 0;
 
 }
 .accordion-parent {
     background-color: white ;
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 15px;
+    max-width: 535px;
+}
+
+.star-icon {
+    width: 25px;;
 }
 
 .flex-heading {
@@ -35,8 +66,47 @@ article {
 
 .space-between {
     justify-content: space-between;
+    color: hsl(292, 42%, 14%);
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.content {
+    margin-top: 10px;
 }
 
 .collapsed {
     display: none;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+}
+
+
+@media screen and (min-width: 700px) {
+    .desktop-bg {
+        display: block;
+    }
+
+    .mobile-bg {
+        display: none;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    header {
+        padding-bottom: 2vw;
+    }
+
+    .accordion-parent {
+        padding: 3vw;
+    }
+
+    .star-icon {
+        width: 40px;
+    }
 }

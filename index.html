@@ -20,20 +20,23 @@
   </style>
 </head>
 <body>
+  <img class="mobile-bg" src="assets/images/background-pattern-mobile.svg" alt="">
+  <img class="desktop-bg" src="assets/images/background-pattern-desktop.svg" alt="">
   <main class="accordion-parent">
-    <header class="flex-heading">
-      <img src="assets/images/icon-star.svg" alt="">
-      <h1>FAQs</h1>
-    </header>
     <section>
+      <header class="flex-heading">
+        <img class="star-icon" src="assets/images/icon-star.svg" alt="">
+        <h1>FAQs</h1>
+      </header>
       <article>
         <h2>
-          <button aria-expanded="false" aria-label="accordion-content" class="flex-heading space-between">
+          <button aria-expanded="false" aria-label="accordion-content1" class="flex-heading space-between">
             What is Frontend Mentor, and how will it help me?
-            <img src="assets/images/icon-plus.svg" alt="">
+            <img class="plus-icon" src="assets/images/icon-plus.svg" alt="">
+            <img class="minus-icon collapsed" src="assets/images/icon-minus.svg" alt="">
           </button>
         </h2>
-        <div id="accordion-content" class="collapsed">
+        <div id="accordion-content1" class="content collapsed">
           <p>
             Frontend Mentor offers realistic coding challenges to help developers improve their 
             frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
@@ -44,12 +47,13 @@
 
       <article>
         <h2>
-          <button aria-expanded="false" aria-label="accordion-content" class="flex-heading space-between">
+          <button aria-expanded="false" aria-label="accordion-content2" class="flex-heading space-between">
             Is Frontend Mentor free?
-            <img src="assets/images/icon-plus.svg" alt="">
+            <img class="plus-icon" src="assets/images/icon-plus.svg" alt="">
+            <img class="minus-icon collapsed" src="assets/images/icon-minus.svg" alt="">
           </button>
         </h2>
-        <div id="accordion-content" class="collapsed">
+        <div id="accordion-content2" class="content collapsed">
           <p>
             Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
             option providing access to a range of projects suitable for all skill levels.
@@ -59,12 +63,13 @@
 
       <article>
         <h2>
-          <button aria-expanded="false" aria-label="accordion-content" class="flex-heading space-between">
+          <button aria-expanded="false" aria-label="accordion-content3" class="flex-heading space-between">
             Can I use Frontend Mentor projects in my portfolio?
-            <img src="assets/images/icon-plus.svg" alt="">
+            <img class="plus-icon" src="assets/images/icon-plus.svg" alt="">
+            <img class="minus-icon collapsed" src="assets/images/icon-minus.svg" alt="">
           </button>
         </h2>
-        <div id="accordion-content" class="collapsed">
+        <div id="accordion-content3" class="content collapsed">
           <p>
             Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
             way to showcase your skills to potential employers!
@@ -74,12 +79,13 @@
 
       <article>
         <h2> 
-          <button aria-expanded="false" aria-label="accordion-content" class="flex-heading space-between">
-            How can I get help if I'm stuck on a Frontend Mentor challenge?
-            <img src="assets/images/icon-plus.svg" alt="">
+          <button aria-expanded="false" aria-label="accordion-content4" class="flex-heading space-between">
+            How can I get help if I'm stuck on a challenge?
+            <img class="plus-icon" src="assets/images/icon-plus.svg" alt="">
+            <img class="minus-icon collapsed" src="assets/images/icon-minus.svg" alt="">
           </button>
         </h2>
-        <div id="accordion-content" class="collapsed">
+        <div id="accordion-content4" class="content collapsed">
           <p>
             The best place to get help is inside Frontend Mentor's Discord community. There's a help 
             channel where you can ask questions and seek support from other community members.
